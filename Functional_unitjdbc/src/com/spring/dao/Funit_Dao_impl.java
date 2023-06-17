@@ -25,7 +25,7 @@ public class Funit_Dao_impl implements Funit_Dao {
 	}
 
 	@Override
-	public List<FunitModel> getfunitbyid(FunitModel f) {
+	public List<FunitModel> getfunitbyid(Integer modl_id) {
 		ArrayList<FunitModel> fu = new ArrayList<>();
 		// return fu;
 

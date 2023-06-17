@@ -25,8 +25,8 @@ public class FunitController {
 	FunitModel functionalUnit;
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String funit(Model m) {
-		ArrayList<FunitModel> f1 = (ArrayList<FunitModel>) functionalUnitDao.getfunitbyid(functionalUnit);
+	public String funit(Model m,@RequestParam("modl_id)Integer modl_id) {
+		ArrayList<FunitModel> f1 = (ArrayList<FunitModel>) functionalUnitDao.getfunitbyid(modl_id);
 		m.addAttribute("f1", f1);
 		System.out.println(f1 + " " + "controller");
 		return "funit";
